@@ -1,0 +1,8 @@
+{
+  "name": "Adafruit_TMP006",
+  "author": "Adafruit, JhonatanLaguna",
+  "license": "GNU GPLv3",
+  "version": "0.0.10",
+  "description": "An Implementation of Adafruit's TMP006 Library for the Spark Core, Particle Photon, P1, Electron and RedBear Duo",
+  "namespace": "Adafruit_TMP006"
+}
