@@ -23,19 +23,13 @@
 #define TMP006_A1 0.00175
 #define TMP006_S0 6.4  // * 10^-14
 
-#if (ARDUINO >= 100)
- #include "Arduino.h"
+#include "Adafruit_Sensor.h"
+#if defined (SPARK)
+ #define WIRE Wire
+ #include <math.h>
 #else
- #include "WProgram.h"
-#endif
-#include <Adafruit_Sensor.h>
-
-#ifdef __AVR_ATtiny85__
-  #include "TinyWireM.h"
-  #define Wire TinyWireM
-#else
-  #include "Wire.h"
-#endif
+#include <Wire.h>
+#endif //Spark
 
 // uncomment for debugging!
 //#define TMP006_DEBUG 1
